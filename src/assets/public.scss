@@ -1,0 +1,47 @@
+::-webkit-scrollbar { /*滚动条整体样式*/
+  width: 10px; /*高宽分别对应横竖滚动条的尺寸*/
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb { /*滚动条里面小方块*/
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #535353 -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+}
+
+::-webkit-scrollbar-track { /*滚动条里面轨道*/
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background: #EDEDED;
+}
+
+.table-action-bar {
+  margin: 0 0 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  .action-panel {
+    flex-grow: 1;
+
+    &.left {
+      button {
+        margin-right: 15px;
+      }
+    }
+
+    &.right {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+
+      button {
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+.list-page {
+  margin: 10px 0 0 0;
+}

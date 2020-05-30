@@ -1,0 +1,48 @@
+.statement-dialog{
+
+    .ivu-modal-header{
+        .header{
+
+            padding: 30px 0 20px 0;
+        }
+    }
+
+    .ivu-modal-body{
+        .body{
+            padding: 20px;
+            text-align: left;
+
+
+            .statement{
+                background: #fff;
+                padding: 20px;
+
+                .height-light{
+                    color: #ed3f14;
+                }
+            }
+
+            .statement-checkbox{
+                margin-top: 15px;
+            }
+        }
+
+    }
+
+    .ivu-modal-footer{
+        background: #f7f7f7;
+
+        .submit-btn{
+            display: none;
+            border-color: #ed3f14;
+            background-color: #ed3f14;
+            color: #fff;
+
+            &[disabled]{
+                color: #bbbec4;
+                background-color: #f7f7f7;
+                border-color: #dddee1;
+            }
+        }
+    }
+}
